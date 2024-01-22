@@ -3,23 +3,27 @@
 let nomeHeroi = "Dubairro"
 let xpHeroi = 4839
 
-if (pontosXP < 1000) {
-    nivelDoHeroi = "Ferro";
-} else if (pontosXP >= 1001 && pontosXP <= 2000) {
-    nivelDoHeroi = "Bronze";
-} else if (pontosXP >= 2001 && pontosXP <= 5000) {
-    nivelDoHeroi = "Prata";
-} else if (pontosXP >= 5001 && pontosXP <= 7000) {
-    nivelDoHeroi = "Ouro";
-} else if (pontosXP >= 7001 && pontosXP <= 8000) {
-    nivelDoHeroi = "Platina";
-} else if (pontosXP >= 8001 && pontosXP <= 9000) {
-    nivelDoHeroi = "Ascendente";
-} else if (pontosXP >= 9001 && pontosXP <= 10000) {
-    nivelDoHeroi = "Imortal";
+// decisao
+
+let nivelHeroi
+
+if (xpHeroi < 1000) {
+    nivelHeroi = "Ferro";
+} else if (xpHeroi >= 1001 && xpHeroi <= 2000) {
+    nivelHeroi = "Bronze";
+} else if (xpHeroi >= 2001 && xpHeroi <= 5000) {
+    nivelHeroi = "Prata";
+} else if (xpHeroi >= 5001 && xpHeroi <= 7000) {
+    nivelHeroi = "Ouro";
+} else if (xpHeroi >= 7001 && xpHeroi <= 8000) {
+    nivelHeroi = "Platina";
+} else if (xpHeroi >= 8001 && xpHeroi <= 9000) {
+    nivelHeroi = "Ascendente";
+} else if (xpHeroi >= 9001 && xpHeroi <= 10000) {
+    nivelHeroi = "Imortal";
 } else {
-    nivelDoHeroi = "Radiante";
+    nivelHeroi = "Radiante";
 }
 
 //saida 
-console.log(`O Heroi de nome ${nomeHeroi} esta no nivel de ${xpHeroi}!`)
+console.log(`O Heroi de nome ${nomeHeroi} esta no nivel de ${nivelHeroi}!`)
